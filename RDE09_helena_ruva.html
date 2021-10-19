@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimídias</title>
+</head>
+<body>
+    <h1> Incorporando multimídia ao site</h1>
+    <h3> Tag iframe </h3>
+     <p>Usada para incorporar mídias ao documento HTML, como vídeos, áudios, sites...</p>
+     <p>A sintaxe: <code> < iframe src=" link " height=numero width=numero >< /iframe ></code></p>
+
+     <h3> Incorporar outro site dentro do seu site </h3>
+     <p> Usando a tag <code> Iframe </code>, já mostrada acima, podemos colocar sites dentro do seu documento HTML, como o site do IFPR: </p>
+     <iframe src="http://www.irati.ifpr.edu.br" height=300 width=300></iframe>
+     
+
+     <h3> Áudio no seu site </h3>
+     <p> Também é possível hospedar áudios, você deve entrar em um site como por exemplo o soundcloud e procurar o som ou efeito sonoro desejado. <br> Depois deve copiar o link e colar no seu código, caso queira também pode redimencionar a telinha. O resultado fica como esse: </p>
+     <iframe width="30%" height="30%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/826108867&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/fosterthepeoplemusic" title="Foster The People" target="_blank" style="color: #cccccc; text-decoration: none;">Foster The People</a> · <a href="https://soundcloud.com/fosterthepeoplemusic/lambs-wool" title="Lamb&#x27;s Wool" target="_blank" style="color: #cccccc; text-decoration: none;">Lamb&#x27;s Wool</a></div>
+
+     <h3> Vídeos no seu site </h3>
+     <p> Para incorporar vídeos no seu site, você deve buscar seu vídeo em um site, como por exemplo o Youtube, e selecionar "copiar", depois "incorporar" e colar o link no seu código. <br> O resultado fica como o a seguir:</p>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/y8WidAS1ULQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+     <h3> Tag video</h3>
+     <p> Essa tag é usada quando você quer usar um vídeo já hospedado no seu computador e não na web. <br> O ideal é que você coloque várias opções do mesmo vídeo no código,para caso sua primeira não funcione o código automaticamente usa a segunda. Veja a sintaxe:<br> <code> < video poster="link " controls> <br>
+        < source src="link 1" type="tipo de video 1"> <br>
+        < source scr="link 2" type="tipo de video 2"> <br>
+        < source src="link 3" type="tipo de video 3"> <br>
+      < /video > <br> </code> <br> O resultado fica assim: </p>
+     <video poster="videoo/_Bike.jpg" controls>
+       <source src="videoo/_Bike.mp4" type="video/mp4">
+       <source scr="videoo/Bike.webm" type="video/webm">
+       <source src="videoo/Bike.ogv" type="video/ogv"> 
+     </video>
+
+     <h3> Tag audio </h3>
+     <p> Para usar áudio no seu site, você deve usar músicas e sons sem direitos autorais, para isso é possível acessar o Youtube por exemplo. <br> O áudio é semlhante ao vídeo, deve estar já hospedado no seu computador, também é possível disponibilizar outras opções caso a primeira não funcione no navegador. Veja a sintaxe: <br> <code>     < audio preload= "metadata" controls > <br>
+        < source src="link audio 1" type="tipo audio 1" > <br>
+        < source src="link audio 2" type="tipo audio 2" > <br>
+        < source src="link audio 3" type="tipo audio 3" > <br>
+    < /audio > <br> </code>  </p>
+     <audio preload= "metadata" controls >
+         <source src="audio/Hey Sailor - Letter Box.mp3" type="audio/mp3">
+         <source src="audio/Hey Sailor - Letter Box.ogg" type="audio/ogg">
+         <source src="audio/Hey-Sailor-Letter-Box.wav" type="audio/wav"> 
+     </audio>
+
+     <h3> Tag picture </h3>
+     <p> Essa tag é usada para agrupar imagens. Podemos adaptar a imagem de acordo com o tamanho da página web ou do dispositivo usado, usando o tamanho máximo em pixels. Veja a sintaxe: <br> <code> < picture > <br>
+        < source media="(max-width: maximo em pixels 1)" srcset="link da imagem menor" > <br>
+        < source media="(max-width: maximo em pixels 2)" srcset="link da imagem media" > <br>
+        < source media="(max-width: maximo em pixels 3)" srcset="link da imagem grande" > <br>
+        < img src="link imagem" alt="descrição" > <br>
+    < /picture > <br> </code></p>>
+     <picture> 
+         <source media="(max-width:500px)" srcset="img/bike_110.jpg">
+         <source media="(max-width:700px)" srcset="img/bike_320.jpg">
+         <source media="(max-width:1000px)" srcset="img/bike_640.jpg">
+         <img src="img/bike_full.jpg" alt="por do sol">
+     </picture>
+
+</body>
+</html>
